@@ -3,7 +3,7 @@ exports.create = (req, res) => {
 
 // Validate request
 console.log(req.body)
-if (!req.body.title) {
+if (!req.body.name) {
 
 res.status(400).send({ message: "Content can not be empty!" });
 
@@ -15,7 +15,7 @@ return;
 
 const customer = new Customer ({
 
-title:req.body.title,
+title:req.body.name,
 
 email:req.body.email,
 

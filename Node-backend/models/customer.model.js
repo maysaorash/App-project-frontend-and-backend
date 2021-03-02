@@ -2,7 +2,7 @@ const mongoose = require('mongoose');
 const schema = new mongoose.Schema(
 {title:String,
 email:String,
-phone:Number,
+phone:String,
 city:String,
 country:String,
 itemsSold:Array,
